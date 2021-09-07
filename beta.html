@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial=scale1.0" charset="utf-8">
+	<title>Noxxas</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	
+</head>
+<body>
+	<section class="header">				
+		<nav>
+			<a href="index.html"><img src=""></a>
+			<div class="nav-links" id="navLinks">
+			  
+		<i class="fa fa-window-close" onclick="hideMenu()"></i>	
+				
+				<ul>
+					<li><a href="">Home</a></li>
+					<!-- <li><a href="">About</a></li> -->
+					<li><a href="contributor.html">Contributor</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="">Login</a></li>
+				</ul>
+			</div>
+			
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+
+		</nav>
+
+<div class="text-box">
+	<h1>Unjustice Official Website</h1>
+	<p> The place where you can find all Informations about Unjustice series </p>
+	<a class="hero-btn" href=""> Jump in to the Story</a>
+</div>
+
+
+		
+	</section>
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+
+
+</script>
+</body>
+</html>
