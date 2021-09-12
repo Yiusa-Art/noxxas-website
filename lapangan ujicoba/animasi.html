@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 500px;
+            transition: 1.5s;
+            border-radius: 100%;
+            text-align: center;
+            
+        }
+
+        .kotak:hover {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 200px;
+            border-radius: 10%;
+            animation-name: spin;
+            text-align: center;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(180deg); 
+        }
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    
+<div class="kotak"></div>
+
+</body>
+</html>
