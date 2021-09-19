@@ -15,7 +15,7 @@
 	<nav>
 	<a href="index.html"><img src=""></a>	
      <div class="nav-links" id="navLinks">
-	  <i class="fa fa-window-close" onclick="hideMenu()"></i>
+	  <i onclick="hideMenu()"><ion-icon name="close-outline"></ion-icon></i>
 				<ul>
 					<li><a href="">Home</a></li>
 					<!-- <li><a href="">About</a></li> -->
@@ -24,14 +24,14 @@
 					<li><a href="isiWeb/login.html">Login</a></li>
 				</ul>
 			</div>	
-	   <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i onclick="showMenu()"><ion-icon name="grid-outline"></ion-icon></i>
 	</nav>
 
 
 <div class="text-box">
 	<h1>Unjustice Official Website</h1>
 	<p> The place where you can find all Informations about Unjustice series </p>
-	<a class="hero-btn" href="storyMenu.html"> Jump in to the Story</a>
+	<a class="hero-btn" href="#series"> Jump in to the Story</a>
 </div>
 		
  </section>
@@ -43,6 +43,9 @@
 	<p> Chat bersama orang lain dan share opini Mu di komunitas ini </p>
 
 	<div class="row">
+
+		<div></div>
+
 		<div class="community-col">
 			<h3>Discord</h3>
 			<a href=""><img src="images/discord_logo.png"></a>
@@ -58,12 +61,14 @@
 			<a href=""><img src="images/patreon_logo.png"></a>
 		</div>
 
-		<div class="community-col">
+		<!-- <div class="community-col">
 			<h3>Community Chat</h3>
 			<p>Still Unavaible</p>
 			<p style="color: red; font-style: bold;">W.I.P</p> 
-			<!-- <----- work in progress -->
-		</div>
+		 <----- work in progress -->
+		<!-- </div> -->
+
+		<div></div>
 
 
 
@@ -75,7 +80,7 @@
 
 <!-- Series -->
 
-<section class="series">
+<section class="series" id="series">
 	<h1>Unjustice Series</h1>
 		<p>Saksikan seri novel Unjustice yang masih on going disini</p>
 			
@@ -167,6 +172,12 @@
 	}
 
 
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
+
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
 </script>
 
 </body>

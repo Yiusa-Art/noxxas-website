@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@
 .banner-header {
   min-height: 27vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.171),rgba(68, 233, 255, 0.39)), url(images/image1.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.171),rgba(68, 233, 255, 0.39)), url(images/image1.png);
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -32,10 +36,17 @@
 
 .parallaxBg h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
   padding-top: 20px;
   position: absolute;
   text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 5px rgba(98, 0, 255, 0.356),
+   0 0 10px rgba(98, 0, 255, 0.356),
+   0 0 5px rgba(98, 0, 255, 0.356),
+   0 0 3px rgba(98, 0, 255, 0.356),
+   0 0 10px rgba(98, 0, 255, 0.356) ;
 }
 
 @media(max-width: 700px   ) {
@@ -82,13 +93,12 @@
 	text-decoration: none;
 	font-size: 20px;
   display: flex;
-  text-align: center;
-  text-align: left;
   transition: 1s;
   list-style: none;
 	display: inline-block;
 	padding: 8px 12px;
 	position: relative;
+
 }
 
 .nav-links a :hover::after {
@@ -150,6 +160,8 @@
   .reveal:hover::before {
     transform: translateY(12px);
     opacity: 0.2;
+    box-shadow: 0 0 6px 2px #000;
+    transition: 0.5s;
   }
   
   .reveal-container {

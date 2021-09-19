@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -23,6 +27,8 @@
 	position: relative;
 
 }
+
+
 
 nav {
 	display: flex;
@@ -79,6 +85,7 @@ nav img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .text-box h1 {
@@ -125,11 +132,18 @@ nav .fa{
 		flex: 1 0 30% !important;
 	}
 
+	.header i {
+		color: white;
+		
+	}
 	.text-box h1 {
-		font-size: 32px;
+		font-size: 20px;
 	}
 	.nav-links ul li {
 		display: block;
+	}
+	.text-box p {
+		font-size: 12px;
 	}
 	.nav-links {
 		position: absolute;
@@ -187,6 +201,7 @@ h1 {
 	margin-top: 5%;
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 .community-col {
@@ -196,8 +211,9 @@ h1 {
 	background: transparent;
 	border-radius: 10px;
 	margin-bottom: 5%;
-	padding: 20px 12px;
-	padding-top: 50px;
+	padding: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	box-sizing: border-box;
 	border: 1px solid darkblue;
 	transition: 0.7s;
