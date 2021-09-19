@@ -5,19 +5,54 @@
 }
 
 .banner-header {
-    min-height: 27vh;
+  min-height: 27vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.171),rgba(68, 233, 255, 0.39)), url(images/banner.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.171),rgba(68, 233, 255, 0.39)), url(images/image1.jpg);
 	background-position: center;
 	background-size: cover;
 	position: relative;
-    transition: 1.5s;
+  transition: 1.5s;
+  overflow: hidden;
 
 }
 
 .banner-header:hover {
     background-color: linear-gradient(rgba(0, 0, 0, 0.466),rgba(68, 233, 255, 0.39));
 }
+
+.parallaxBg {
+  width: 100%;
+  height: 27vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallaxBg h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+@media(max-width: 700px   ) {
+  .parallaxBg h1 {
+    font-size: 20px;
+  }
+}
+
+/* .parallaxBg h4 {
+  text-align: center;
+  font-size: 19px;
+  padding-top: 10px;
+  color: rgb(150, 3, 150);
+  position: absolute;
+  text-transform: uppercase;
+} */
+
 
 #background-video {
     min-height: 37vh;
@@ -72,7 +107,7 @@
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 15px;
-  font-weight: 500;
+  font-weight: 540;
 }
 
 .reveal {
@@ -158,11 +193,14 @@
   }
   
 
-  .reveal__title-overlay-text {
+  .reveal__title-overlay-text a {
     width: 100%;
     text-align: center;
+    text-decoration: none;
     transition: transform 0.4s cubic-bezier(0, 0, 0.5, 1);
     transform: translateX(100%) skew(30deg);
+    color: white;
+    animation-delay: -5s;
   }
   
   .reveal:hover .reveal__title-overlay {
@@ -172,6 +210,8 @@
   .reveal:hover .reveal__title-overlay-text {
     transform: skew(30deg);
   }
+
+
 
   .col-overlay {
       padding-left: 10px;
@@ -226,7 +266,7 @@
   }
 
   .perbatasan-kematian {
-    background-color: gray;
+    background-color: rgb(85, 3, 85);
     width: 100%;
     height: 50px;
     

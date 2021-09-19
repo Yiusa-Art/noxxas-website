@@ -10,14 +10,19 @@
 </head>
 <body>
 
-<section class="banner-header">
-        
-    <h1>Welcome to the Story Menu</h1>
-    <h4>Here you can read Unjustice Novel</h4>
+<div class="parallaxBg">
+ <img src="images/image1.jpg" class="parallaximg">
+
+ <h1>Welcome to the Unjustice Series Menu</h1>
+
 
 </div>
+<section>
+        
+
 
 </section>
+
 
 
 <section  class="perbatasan-kematian" >
@@ -44,7 +49,7 @@
             <div class="reveal__title">              
           <div class="reveal__title-overlay">
               <div class="reveal__title-overlay-text">
-                  Read
+                  <a href="">Read</a>
               </div>
           </div>
       </div>
@@ -57,7 +62,7 @@
             <div class="reveal__title">              
           <div class="reveal__title-overlay">
               <div class="reveal__title-overlay-text">
-                  Read
+                  <a href="">Read</a>
               </div>
           </div>
       </div>
@@ -120,6 +125,13 @@
 
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+    var image1 = document.getElementsByClassName('parallaximg');
+    new simpleParallax(image1, {
+        orientation: 'left'
+    });
+</script>
     
 </body>
 </html>
