@@ -283,3 +283,226 @@ html {
     height: 50px;
     
   }
+
+  /* New Menu Style */
+
+  .side-bar {
+    position: fixed;
+    width: 100%;
+    height: -130px;
+    left: 0;
+    top: 100%;
+    flex-direction: row;
+    background: rgb(23, 9, 46);
+    transition: top 0.5s ease-in-out;
+	z-index: 1;
+    
+}
+
+.side-bar.show {
+    top: 80%; 
+    transition: top 0.5s ease;
+}
+
+
+
+ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgb(23, 9, 46, 0.3);
+    padding: 6% 7%;
+   
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+	
+    
+}
+
+ul li a ion-icon {
+    font-size: 2.5em;
+    padding-bottom: 5px;
+    pointer-events: none;
+    opacity: 0.25;
+    transition: 0.45s;
+}
+
+ul li:hover a ion-icon {
+    opacity: 1;
+}
+
+#marker {
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#marker::before {
+    content: '';
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    background: cyan;
+    box-shadow: 
+    0 0 5px cyan,
+    0 0 20px cyan, 
+    0 0 35px cyan,
+    0 0 50px cyan;
+    opacity: 1;
+
+}
+
+@media(max-width: 700px) {
+    #marker::before {
+        top: 16px;
+    }
+
+    .text {
+        overflow-x: visible;
+    }
+}
+
+ul li:nth-child(1).active ~ #marker::before {
+    background: rebeccapurple;
+    box-shadow: 
+    0 0 5px rebeccapurple,
+    0 0 20px rebeccapurple, 
+    0 0 35px rebeccapurple,
+    0 0 50px rebeccapurple;
+	transition: 0.3s;
+}
+
+ul li:nth-child(2).active ~ #marker::before {
+    background: rgb(255, 102, 0);
+    box-shadow: 
+    0 0 5px  rgb(255, 102, 0),
+    0 0 20px  rgb(255, 102, 0), 
+    0 0 35px  rgb(255, 102, 0),
+    0 0 50px  rgb(255, 102, 0);
+	transition: 0.3s;
+}
+
+ul li:nth-child(3).active ~ #marker::before {
+    background: rgb(0, 255, 85);
+    box-shadow: 
+    0 0 5px rgb(0, 255, 85),
+    0 0 20px rgb(0, 255, 85), 
+    0 0 35px rgb(0, 255, 85),
+    0 0 50px rgb(0, 255, 85);
+	transition: 0.3s;
+}
+
+ul li:nth-child(4).active ~ #marker::before {
+    background: rgb(0, 119, 255);
+    box-shadow: 
+    0 0 5px  rgb(0, 119, 255),
+    0 0 20px  rgb(0, 119, 255), 
+    0 0 35px  rgb(0, 119, 255),
+    0 0 50px  rgb(0, 119, 255);
+	transition: 0.3s;
+}
+
+ul li:nth-child(5).active ~ #marker::before {
+    background: cyan;
+    box-shadow: 
+    0 0 5px cyan,
+    0 0 20px cyan, 
+    0 0 35px cyan,
+    0 0 50px cyan;
+	transition: 0.3s;
+}
+
+ul li:nth-child(6).active ~ #marker::before {
+    background: rgb(218, 184, 32);
+    box-shadow: 
+    0 0 5px rgb(218, 184, 32),
+    0 0 20px rgb(218, 184, 32), 
+    0 0 35px rgb(218, 184, 32),
+    0 0 50px rgb(218, 184, 32);
+	transition: 0.3s;
+}
+
+ul li:nth-child(7).active ~ #marker::before {
+    background: rgb(180, 20, 20);
+    box-shadow: 
+    0 0 5px rgb(180, 20, 20),
+    0 0 20px rgb(180, 20, 20), 
+    0 0 35px rgb(180, 20, 20),
+    0 0 50px rgb(180, 20, 20);
+	transition: 0.3s;
+}
+
+ul li:nth-child(8).active ~ #marker::before {
+    background: rgb(126, 126, 126);
+    box-shadow: 
+    0 0 5px rgb(126, 126, 126),
+    0 0 20px rgb(126, 126, 126), 
+    0 0 35px rgb(126, 126, 126),
+    0 0 50px rgb(126, 126, 126);
+}
+
+
+.btn {
+    position: absolute;
+    color: white;
+    top: 94%;
+    left: 1%;
+    font-size: 25px;
+    background: #1e1e1e;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-bottom: 2px solid rgb(68, 11, 161);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: top 0.6s ease;
+	z-index: 1;
+    
+}
+
+.btn {
+    position: fixed;
+}
+
+.btn.click {
+    top: 74%;
+	
+}
+
+.btn.click ion-icon {
+	opacity: 0;
+}
+
+.btn.click::before {
+    content: '\x';
+}
+
+.men-con {
+	/* display: flex; */
+    white-space: nowrap;
+    border-radius: 1%;
+	overflow: scroll;
+	overflow-y: hidden;
+}
